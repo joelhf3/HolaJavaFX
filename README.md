@@ -1,18 +1,18 @@
-# HolaMundoFX
+# HolaJavaFX
 
-Versi髇 del proyecto [HolaMundo](https://github.com/dam-dad/HolaMundo) pero mejorando algunos aspectos en cuanto a la implementaci髇.
+Versi贸n del proyecto [HolaGUI](https://github.com/dam-dad/HolaGUI) mejorando algunos aspectos en cuanto a la implementaci贸n y aplicando buenas pr谩cticas.
 
 ![Screenshot1](docs/images/screenshot1.png)
 
 ![Screenshot2](docs/images/screenshot2.png)
 
-## Ejecuci髇
+## Ejecuci贸n
 
-1. Descargar el c骴igo fuente y entrar en el directorio proyecto:
+1. Descargar el c贸digo fuente y entrar en el directorio proyecto:
 
 ```bash
-git clone https://github.com/dam-dad/HolaMundoFX.git
-cd HolaMundoFX
+git clone https://github.com/dam-dad/HolaJavaFX.git
+cd HolaJavaFX
 ```
 
 2. Construir el proyecto y crear un JAR ejecutable en el directorio `target`:
@@ -21,7 +21,7 @@ cd HolaMundoFX
 mvn package
 ```
 
-3. Ejecutar la aplicaci髇:
+3. Ejecutar la aplicaci贸n:
 
 ```bash
 mvn exec:java
