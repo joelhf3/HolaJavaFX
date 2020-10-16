@@ -15,25 +15,29 @@ public class HolaMundoFX extends Application {
 	private Label saludoLabel;
 	private Button saludarButton;
 	private TextField nombreText;
+	private VBox root;
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
+		// creamos el cuadro de texto
 		nombreText = new TextField();
-		nombreText.setPrefColumnCount(5);
 		nombreText.setPromptText("Introduce un nombre");
-		nombreText.setMaxWidth(150);
+		nombreText.setMaxWidth(150); // ancho del cuadro de texto  
 		
+		// creamos una etiqueta
 		saludoLabel = new Label();
-		saludoLabel.setText("Aqu� saldr� el saludo");
+		saludoLabel.setText("Aquí saldrá el saludo");
 		
+		// creamos un botón 
 		saludarButton = new Button();
 		saludarButton.setText("Saludar");
 		saludarButton.setOnAction(e -> onSaludarButtonAction(e));
-		saludarButton.setDefaultButton(true);
+		saludarButton.setDefaultButton(true); // establece el botón de saludar como botón por defecto
 	
-		VBox root = new VBox();
-		root.setSpacing(5);
+		// panel con disposición vertical
+		root = new VBox();
+		root.setSpacing(15);
 		root.setAlignment(Pos.CENTER);
 		root.getChildren().addAll(nombreText, saludarButton, saludoLabel);
 
@@ -46,8 +50,8 @@ public class HolaMundoFX extends Application {
 
 	private void onSaludarButtonAction(ActionEvent e) {
 		String nombre = nombreText.getText();
-		saludoLabel.setText("�Hola " + nombre + "!");
-		saludoLabel.setStyle("-fx-text-fill: blue; -fx-font: italic bold 30 sans-serif;");
+		saludoLabel.setText("¡Hola " + nombre + "!");
+		saludoLabel.setStyle("-fx-text-fill: red; -fx-font: bold 40 consolas;");
 	}
 
 	public static void main(String[] args) {
