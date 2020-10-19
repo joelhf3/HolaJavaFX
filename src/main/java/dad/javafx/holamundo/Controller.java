@@ -10,16 +10,19 @@ public class Controller {
 	public Controller() {
 		
 		
-		view.getTf().textProperty().bindBidirectional(view.getLbl().textProperty());
+		model.nombreProperty().bind(view.getTf().textProperty());
 		
-		view.getLbl().textProperty().bindBidirectional(model.valorProperty());
+		view.getLbl().textProperty().bind(model.saludoProperty());
 		
 		view.getBtn().setOnAction(e -> click(e));
+		
+		model.setSaludo("Aquí va a salir un saludo");
 		
 	}
 
 	private void click(ActionEvent e) {	
-		model.setValor("Hola " + model.getValor());
+		model.setSaludo("¡Hola " + model.getNombre() + "!");
+		view.getLbl().setStyle("-fx-text-fill: #5566ff; -fx-font: bold 50 consolas;");
 	}
 
 	public View getView() {

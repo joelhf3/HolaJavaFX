@@ -5,20 +5,31 @@ import javafx.beans.property.StringProperty;
 
 public class Model {
 
-	private StringProperty valor = new SimpleStringProperty();
+	private StringProperty nombre = new SimpleStringProperty();
+	private StringProperty saludo = new SimpleStringProperty();
 
-	public final StringProperty valorProperty() {
-		return this.valor;
+	public final StringProperty nombreProperty() {
+		return this.nombre;
 	}
-	
 
-	public final String getValor() {
-		return this.valorProperty().get();
+	public final String getNombre() {
+		return this.nombreProperty().get();
 	}
-	
 
-	public final void setValor(final String valor) {
-		this.valorProperty().set(valor);
+	public final void setNombre(final String nombre) {
+		this.nombreProperty().set(nombre);
 	}
-	
+
+	public final StringProperty saludoProperty() {
+		return this.saludo;
+	}
+
+	public final String getSaludo() {
+		return this.saludoProperty().get();
+	}
+
+	public final void setSaludo(final String saludo) {
+		this.saludoProperty().set(saludo);
+	}
+
 }
