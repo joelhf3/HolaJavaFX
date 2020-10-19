@@ -17,7 +17,7 @@ public class View extends VBox {
 		
 		tf = new TextField();
 		btn = new Button("Saludar");
-		lbl = new Label("Aquí saldrá el saludo");
+		lbl = new Label();		
 		
 		this.setSpacing(5);
 		this.setFillWidth(false);

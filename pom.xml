@@ -12,6 +12,7 @@
 	<description>Hola Mundo en JavaFX incluyendo algunos aspectos básicos del framework.</description>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>	
 		<maven.compiler.target>14</maven.compiler.target>
 		<maven.compiler.source>14</maven.compiler.source>
 		<exec.mainClass>dad.javafx.holamundo.Main</exec.mainClass>
